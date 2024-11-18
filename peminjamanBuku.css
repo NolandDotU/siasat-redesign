@@ -1,0 +1,21 @@
+/* Add custom styles to book cards */
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 30px;
+}
+
+.card {
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%; /* Lebar maksimum sesuai dengan lebar kontainer kartu */
+    height: auto; /* Menjaga aspek rasio gambar */
+}

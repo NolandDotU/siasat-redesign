@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://www.uksw.edu/wp-content/uploads/2023/05/cropped-uksw-32x32.png"
+      sizes="32x32"
+    />
+    <title>Homepage | Siasat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Add your custom CSS -->
+    <style>
+      body {
+        background-color: #007bff;
+        /* Ganti warna latar belakang sesuai kebutuhan */
+      }
+
+      .navbar {
+        background-color: #343a40;
+        /* Ganti warna navbar sesuai kebutuhan */
+      }
+
+      .navbar-brand img {
+        /* width: 40px; */
+        /* Sesuaikan lebar logo sesuai kebutuhan */
+        height: auto;
+      }
+
+      .container {
+        margin-top: 20px;
+      }
+
+      .card {
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .card-title {
+        color: #007bff;
+        /* Ganti warna judul sesuai kebutuhan */
+      }
+
+      .card-text {
+        color: #6c757d;
+        /* Ganti warna teks sesuai kebutuhan */
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        /* Ganti warna tombol sesuai kebutuhan */
+        border-color: #007bff;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+        /* Ganti warna tombol saat dihover sesuai kebutuhan */
+        border-color: #0056b3;
+      }
+
+      .pagination {
+        justify-content: center;
+      }
+
+      .pagination .page-item .page-link {
+        color: #007bff;
+        /* Ganti warna halaman sesuai kebutuhan */
+      }
+
+      .pagination .page-item.active .page-link {
+        background-color: #007bff;
+        /* Ganti warna latar halaman aktif sesuai kebutuhan */
+        border-color: #007bff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <body class="bg-primary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="images/siasat.gif" alt="Logo Siasat"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="panduan.html">Panduan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="jadwal_kuliah.html">Jadwal Kuliah</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tagihan.html">Tagihan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="keaktifan_mahasiswa.html"
+                  >Keaktifan Mahasiswa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peminjamanBuku.html"
+                  >Peminjaman Buku</a
+                >
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <a href="login.html">Log Out</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container bg-white rounded my-4 p-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="images/book.gif" alt="" />Peminjaman Buku
+              Perpustakaan</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Enter book title or author"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Cari
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <!-- Book Cards -->
+        <div class="card-group">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/buku_perpus/Buku4.jpg" />
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img src="images/buku_perpus/Buku5.jpg" />
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img src="images/buku_perpus/Buku6.jpg" />
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Pinjam</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/buku_perpus/Buku1.jpg" />
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img src="images/buku_perpus/Buku2.jpg" />
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Pinjam</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img src="images/buku_perpus/Buku3.jpg" />
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Pinjam</a>
+            </div>
+          </div>
+        </div>
+        <div class="pages mx-auto">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Add your JavaScript file -->
+      <script src="javaScript/js_peminjamanBuku.js"></script>
+    </body>
+  </body>
+</html>
